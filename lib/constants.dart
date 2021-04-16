@@ -75,28 +75,6 @@ Widget containerStyle(Widget widget, double x, BuildContext context) {
   );
 }
 
-Widget appBarStyle(
-    String title, IconData icon, BuildContext context, String pagename , [Widget widget]) {
-  return AppBar(
-    centerTitle: true,
-    title: Text(
-      "$title",
-      style: TextStyle(
-          color: Color(fontColor), fontFamily: "$fontFamily", fontSize: 20),
-    ),
-    leading: IconButton(
-        icon: Icon(
-          icon,
-          color: Color(fontColor),
-        ),
-        onPressed: () {
-          Navigator.of(context).pushNamed("$pagename");
-        }),
-    elevation: 0,
-    backgroundColor: Color(fontColor4),
-  );
-}
-
 
 
 Widget downScreenButton( String pagename  , BuildContext context  , String buttonname){
@@ -133,4 +111,27 @@ Widget downScreenButton( String pagename  , BuildContext context  , String butto
         ),
       ),
     );
+}
+
+
+Widget styleOfAppBar(
+    String title, IconData icon, BuildContext context, String pagename , [Widget widget]) {
+  return AppBar(
+    centerTitle: true,
+    title: Text(
+      "$title",
+      style: TextStyle(
+          color: Color(fontColor), fontFamily: "$fontFamily", fontSize: 20),
+    ),
+    leading: IconButton(
+        icon: Icon(
+          icon,
+          color: Color(fontColor),
+        ),
+        onPressed: () {
+          Navigator.of(context).pushNamed("$pagename");
+        }),
+    elevation: 0,
+    backgroundColor: Color(fontColor4),
+  );
 }

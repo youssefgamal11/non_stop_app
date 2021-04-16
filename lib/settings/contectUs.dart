@@ -7,11 +7,13 @@ class contectus extends StatelessWidget {
     double h = MediaQuery.of(context).size.height;
     double w = MediaQuery.of(context).size.width;
     return Scaffold(
+      appBar: AppBar(
+        title: Text("connect us"),
+      ),
         backgroundColor: Color(fontColor4),
         body: ListView(
           children: [
-            appBarStyle(
-                "تواصل معنا", Icons.arrow_back_ios, context, "/settinghome"),
+
             Column(
               children: [
                 Padding(

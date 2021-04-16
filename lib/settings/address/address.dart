@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:non_stop/constants.dart';
-
 class address extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double h = MediaQuery.of(context).size.height;
     double w = MediaQuery.of(context).size.width;
     return Scaffold(
-        appBar: appBarStyle(
-            "العناويين", Icons.arrow_back_ios_rounded, context, "/settinghome"),
+        appBar: styleOfAppBar("العنوان", Icons.arrow_back_ios, context, "/settinghome"),
         body: Column(
           children: [
             containerStyle(
@@ -108,4 +106,5 @@ class address extends StatelessWidget {
           ],
         ));
   }
+
 }

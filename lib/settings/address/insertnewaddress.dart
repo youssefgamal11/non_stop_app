@@ -5,8 +5,11 @@ class insertaddress extends StatelessWidget {
   Widget build(BuildContext context) {
     double h =  MediaQuery.of(context).size.height ;
     double w = MediaQuery.of(context).size.width;
+
     return Scaffold(
-      appBar: appBarStyle("اضافه عنوان جديد", Icons.arrow_back_ios, context, "/address"),
+      appBar: AppBar(
+        title: Text("new address"),
+      ),
       body: ListView(
         children: [
           Container(
