@@ -8,7 +8,6 @@ import 'Resetingpassword/passwordset.dart';
 import 'Resetingpassword/reset_password.dart';
 import 'Resetingpassword/return_password.dart';
 import 'Resetingpassword/return_password2.dart';
-import 'file:///C:/Users/DELL/AndroidStudioProjects/non_stop_applic/lib/App/H&M_Page/h&m.dart';
 import 'package:non_stop/App/products_return.dart';
 import 'package:non_stop/App/settings/address/address.dart';
 import 'package:non_stop/App/settings/address/insert_new_address.dart';
@@ -25,6 +24,8 @@ import 'App/H&M_Page/product_details/product_details.dart';
 import 'App/home/filter.dart';
 import 'HomePage.dart';
 import 'package:non_stop/App/settings/notification.dart';
+import 'App/H&M_Page/h&m.dart';
+
 
 void main() {
   runApp(MyApp());
