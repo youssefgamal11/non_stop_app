@@ -1,16 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:non_stop/App/FirstPage.dart';
-import 'package:non_stop/settings/address/insertnewaddress.dart';
-import 'file:///C:/Users/DELL/AndroidStudioProjects/non_stop/lib/settings/address/address.dart';
-import 'package:non_stop/settings/contectUs.dart';
-import 'package:non_stop/settings/myPurchases.dart';
-import 'package:non_stop/settings/policy.dart';
-import 'file:///C:/Users/DELL/AndroidStudioProjects/non_stop/lib/settings/returnproduct/returnproduct.dart';
-import 'package:non_stop/settings/settingHome.dart';
+import 'package:non_stop/App/H&M_Page/product_rate/product_rate.dart';
+import 'Onboarding/Activation.dart';
+import 'Onboarding/LogIn.dart';
+import 'Onboarding/SignUp.dart';
+import 'Resetingpassword/passwordset.dart';
+import 'Resetingpassword/reset_password.dart';
+import 'Resetingpassword/return_password.dart';
+import 'Resetingpassword/return_password2.dart';
+import 'file:///C:/Users/DELL/AndroidStudioProjects/non_stop_applic/lib/App/H&M_Page/h&m.dart';
+import 'package:non_stop/App/products_return.dart';
+import 'package:non_stop/App/settings/address/address.dart';
+import 'package:non_stop/App/settings/address/insert_new_address.dart';
+import 'package:non_stop/App/settings/contect_us.dart';
+import 'package:non_stop/App/settings/my_purchases.dart';
+import 'package:non_stop/App/settings/notification.dart';
+import 'package:non_stop/App/settings/policy.dart';
+import 'package:non_stop/App/settings/returnproduct/return_product.dart';
+import 'package:non_stop/App/settings/settingHome.dart';
+import 'package:non_stop/App/shoppingcart/confirmation.dart';
+import 'package:non_stop/App/shoppingcart/confirmation2.dart';
+import 'package:non_stop/App/shoppingcart/shopping_cart_main_page.dart';
+import 'App/H&M_Page/product_details/product_details.dart';
+import 'App/home/filter.dart';
 import 'HomePage.dart';
+import 'package:non_stop/App/settings/notification.dart';
+
 void main() {
   runApp(MyApp());
 }
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -18,17 +37,31 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: HomePage(),
       routes: {
-        "/mypurchases" : (_) => myPurchases(),
-        "/contectus" : (_)=>contectus(),
-        "/address" : (_) => address(),
-        "/policy" : (_) => policy(),
-        "/returnproduct" : (_) => returnProduct(),
-        "/screen1" : (_)=> Screen1(),
-        "/settinghome" : (_) => setting(),
-        "/newaddress" : (_) => insertaddress(),
-        "/firstpage" : (_) => Screen1(),
-        "/contectus" : (_) => contectus(),
-
+        "/mypurchases": (_) => MyPurchases(),
+        "/contectus": (_) => ContectUs(),
+        "/address": (_) => Address(),
+        "/policy": (_) => Policy(),
+        "/returnproduct": (_) => ReturnProduct(),
+        "/screen1": (_) => Screen1(),
+        "/settinghome": (_) => Setting(),
+        "/newaddress": (_) => InsertAddress(),
+        "/firstpage": (_) => Screen1(),
+        "/confirmation": (_) => Confirmation(),
+        "/shoppingcart": (_) => ShoppingCart(),
+        "/confirmation2": (_) => Confirmation2(),
+        "/ProductDetails": (_) => ProductDetails(),
+        "/Return": (_) => Return(),
+        "/Filter": (_) => Filter(),
+        "/HAndM": (_) => HAndM(),
+        "/RateProduct": (_) => RateProduct(),
+        "/Notification" :(_) => Notificate(),
+        "/Signup" :(_) =>Signup(),
+        "/ReturnPassword" :(_) =>ReturnPassword(),
+        "/Login" :(_) =>Login(),
+        "/Activation" : (_) => Activation(),
+        "/ReturnPassword2" :(_) =>ReturnPassword2(),
+        "/ResetPassword" :(_) => ResetPassword(),
+        "/PasswordSet" :(_) => PasswordSet(),
 
       },
     );

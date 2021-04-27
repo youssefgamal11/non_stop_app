@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:non_stop/constants.dart';
-class profile extends StatelessWidget {
+class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double h = MediaQuery.of(context).size.height ;
@@ -30,14 +30,16 @@ class profile extends StatelessWidget {
             ) ,
             Text("عبد الرحمن محمد" , style: TextStyle( fontFamily: "$fontFamily" , color: Color(fontColor) , fontSize: 20),),
             SizedBox(height: h*0.03,),
-           Column(
-             mainAxisAlignment: MainAxisAlignment.spaceAround,
-             children: [
-             details( "رقم الجوال", "1454597", Icons.mobile_screen_share),
-             details("البريد الاكترونى", "example&emil.com", Icons.email_outlined),
-             details("الدوله", "الممكله العربيه السعوديه", Icons.language),
-             details("كلمه المرور", "*******", Icons.lock_outline),
-           ],)
+           Expanded(
+             child: Column(
+               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+               children: [
+               details( "رقم الجوال", "1454597", Icons.mobile_screen_share),
+               details("البريد الاكترونى", "example&emil.com", Icons.email_outlined),
+               details("الدوله", "الممكله العربيه السعوديه", Icons.language),
+               details("كلمه المرور", "*******", Icons.lock_outline),
+             ],),
+           )
 
 
           ],

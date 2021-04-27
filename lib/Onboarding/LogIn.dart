@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:non_stop/App/FirstPage.dart';
 import 'package:non_stop/onboarding//SignUp.dart';
 import 'package:non_stop/constants.dart';
-import 'package:non_stop/ResetingPassword/returnpassword.dart';
+import 'package:non_stop/ResetingPassword/return_password.dart';
 
 class Login extends StatelessWidget {
   @override
@@ -56,7 +56,7 @@ class Login extends StatelessWidget {
                   ),
                   onTap: () {
 
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=> Signup()));
+                   Navigator.pushNamed(context, "/Signup");
                   },
                 ),
                 SizedBox(width: w * 0.02),
@@ -79,7 +79,7 @@ class Login extends StatelessWidget {
             SizedBox(height: h * 0.1),
             GestureDetector(
               onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> ReturnPassword()));
+                Navigator.pushNamed(context, "/ReturnPassword");
               },
               child: Text(
                 "نسيت كلمه المرور",

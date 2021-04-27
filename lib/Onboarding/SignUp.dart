@@ -53,7 +53,7 @@ class Signup extends StatelessWidget {
                   ),
                   onTap: () {
 
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=> Login()));
+                    Navigator.pushNamed(context, "/Login");
                   },
                 ),
                 SizedBox(width: w * 0.01),
@@ -82,38 +82,7 @@ class Signup extends StatelessWidget {
             SizedBox(
               height: h * 0.03,
             ),
-            Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(25),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(fontColor),
-
-                      blurRadius: 5,
-                      offset: Offset(2,2),
-                    )
-                  ]),
-              width: 350,
-              height: 50,
-              child: RaisedButton(
-
-                splashColor: Color(fontColor),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30)),
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=> Confirmation()));
-                },
-                color: Color(fontColor),
-                child: Text(
-                "انشاء حساب",
-                  style: TextStyle(
-                      fontFamily: '$fontFamily',
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 17),
-                ),
-              ),
-            )
+           downScreenButton("/Activation", context, "انشاء حساب")
           ],
         ),
       ),

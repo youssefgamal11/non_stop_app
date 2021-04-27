@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:non_stop/App/FirstPage.dart';
-import 'package:non_stop/onboarding//Activation.dart';
 import 'package:non_stop/constants.dart';
 
 class PasswordSet extends StatelessWidget {
@@ -45,37 +44,7 @@ class PasswordSet extends StatelessWidget {
                   color: Color(fontColor)),
             ),
             SizedBox( height: h*0.08,) ,
-            Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(25),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(fontColor),
-                      blurRadius: 5,
-                      offset: Offset(2, 2),
-                    )
-                  ]),
-              width: 350,
-              height: 50,
-              child: RaisedButton(
-                splashColor: Color(fontColor),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Screen1()));
-                },
-                color: Color(fontColor),
-                child: Text(
-                  "استمرار",
-                  style: TextStyle(
-                      fontFamily: '$fontFamily',
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 17),
-                ),
-              ),
-            ),
+            downScreenButton("/screen1", context, "استمرار")
 
           ],
         ),

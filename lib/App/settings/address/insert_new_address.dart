@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:non_stop/constants.dart';
-class insertaddress extends StatelessWidget {
+class InsertAddress extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double h =  MediaQuery.of(context).size.height ;
     double w = MediaQuery.of(context).size.width;
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text("new address"),
-      ),
+      appBar: styleOfAppBar("اضافه عنوان جديد", Icons.arrow_back_ios, context, "/address"),
       body: ListView(
         children: [
           Container(

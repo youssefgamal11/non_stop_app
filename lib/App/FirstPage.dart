@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:non_stop/App/home.dart';
-import 'package:non_stop/App/profile.dart';
-import 'package:non_stop/App/shoppingcart.dart';
+import 'file:///C:/Users/DELL/AndroidStudioProjects/non_stop_applic/lib/App/home/home.dart';
+import 'file:///C:/Users/DELL/AndroidStudioProjects/non_stop_applic/lib/App/profile/profile.dart';
+import 'package:non_stop/App/settings/settingHome.dart';
+import 'file:///C:/Users/DELL/AndroidStudioProjects/non_stop_applic/lib/App/shoppingcart/shopping_cart_main_page.dart';
 import 'package:non_stop/constants.dart';
-import 'package:non_stop/settings/settingHome.dart';
 
 class Screen1 extends StatefulWidget {
   @override
@@ -13,9 +13,9 @@ class Screen1 extends StatefulWidget {
 class _Screen1State extends State<Screen1> {
   int _currentindex = 3;
   static List<Widget> _myPages = <Widget>[
-    setting(),
-    profile(),
-    shoppingCart(),
+    Setting(),
+    Profile(),
+    ShoppingCart(),
     Home()
   ];
 

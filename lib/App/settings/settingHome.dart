@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import '../constants.dart';
+import 'package:non_stop/App/settings/notification.dart';
+import 'package:non_stop/constants.dart';
 
-class setting extends StatelessWidget {
+class Setting extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double h = MediaQuery.of(context).size.height;
@@ -20,7 +21,9 @@ class setting extends StatelessWidget {
               Icons.notification_important,
               color: Color(fontColor),
             ),
-            onPressed: () {}),
+            onPressed: () {
+              Navigator.pushNamed(context, "/Notification");
+            }),
         elevation: 0,
         backgroundColor: Color(fontColor4),
       ),

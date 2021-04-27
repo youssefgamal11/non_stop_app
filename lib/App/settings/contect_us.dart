@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:non_stop/constants.dart';
 
-class contectus extends StatelessWidget {
+class ContectUs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double h = MediaQuery.of(context).size.height;
     double w = MediaQuery.of(context).size.width;
     return Scaffold(
-      appBar: AppBar(
-        title: Text("connect us"),
-      ),
-        backgroundColor: Color(fontColor4),
+      appBar: styleOfAppBar("تواصل معنا", Icons.arrow_back_ios, context, "/settinghome")
+,        backgroundColor: Color(fontColor4),
         body: ListView(
           children: [
 

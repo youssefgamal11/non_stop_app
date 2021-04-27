@@ -4,35 +4,35 @@ import 'package:getwidget/components/rating/gf_rating.dart';
 import 'package:getwidget/getwidget.dart';
 import 'package:non_stop/constants.dart';
 
-class TestMe extends StatefulWidget {
 
+class RateProduct extends StatefulWidget {
   @override
-  _TestMeState createState() => _TestMeState();
+  _RateProductState createState() => _RateProductState();
 }
 
-class _TestMeState extends State<TestMe> {
+class _RateProductState extends State<RateProduct> {
   final formKey = GlobalKey<FormState>();
   final TextEditingController commentController = TextEditingController();
   List filedata = [
     {
       'name': ' عبد الرحمن التهامى',
       'pic': 'https://tse4.mm.bing.net/th?id=OIP.uyrDfpdXkzEnsruFjjKRKQHaNK&pid=Api&P=0&w=300&h=300',
-      'message': 'هذا النص مثال لنص يمكن ان يستبدل فى نفس المساحه'
+      'message': 'هذا النص مثال لنص يمكن ان يستبدل '
     },
     {
       'name': 'احمد محمد',
       'pic': 'https://tse3.mm.bing.net/th?id=OIP.d5exBiROH6TYns4MchgbMAHaLH&pid=Api&P=0&w=300&h=300',
-      'message': "هذا النص مثال لنص يمكن ان يستبدل فى نفس المساحه"
+      'message': "هذا النص مثال لنص يمكن ان يستبدل"
     },
     {
       'name': 'عمر صبري',
       'pic': 'https://tse3.mm.bing.net/th?id=OIP.8JoWH8mB2Xp2qJkoc1EQ8wHaLH&pid=Api&P=0&w=300&h=300',
-      'message': "هذا النص مثال لنص يمكن ان يستبدل فى نفس المساحه"
+      'message': "هذا النص مثال لنص يمكن ان يستبدل"
     },
     {
       'name': 'عبدالله احمد',
       'pic': 'https://tse4.mm.bing.net/th?id=OIP.2kJisXufF3BaRvlO4ZgoLAHaFj&pid=Api&P=0&w=300&h=300',
-      'message': "هذا النص مثال لنص يمكن ان يستبدل فى نفس المساحه"
+      'message': "هذا النص مثال لنص يمكن ان يستبدل  "
     },
   ];
   double _rating =1  ;
@@ -121,7 +121,7 @@ class _TestMeState extends State<TestMe> {
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30)),
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>TestMe()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>RateProduct()));
                         },
                         color: Color(fontColor),
                         child: Text(
@@ -270,3 +270,4 @@ class _TestMeState extends State<TestMe> {
     );
   }
 }
+

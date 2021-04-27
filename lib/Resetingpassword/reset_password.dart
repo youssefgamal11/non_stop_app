@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:non_stop/ResetingPassword/passwordset.dart';
-import 'package:non_stop/ResetingPassword/returnpassword2.dart';
+import 'package:non_stop/ResetingPassword/return_password2.dart';
 import 'package:non_stop/constants.dart';
 class ResetPassword extends StatelessWidget {
   @override
@@ -51,37 +51,7 @@ class ResetPassword extends StatelessWidget {
 
 
 
-            Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(25),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(fontColor),
-
-                      blurRadius: 5,
-                      offset: Offset(2,2),
-                    )
-                  ]),
-              width: 350,
-              height: 50,
-              child: RaisedButton(
-                splashColor: Color(fontColor),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30)),
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => PasswordSet()));
-                },
-                color: Color(fontColor),
-                child: Text(
-                  " ارسال",
-                  style: TextStyle(
-                      fontFamily: '$fontFamily',
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 17),
-                ),
-              ),
-            )
+            downScreenButton("/PasswordSet", context, "ارسال"),
           ],
         ),
       ),
