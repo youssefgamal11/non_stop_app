@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'onboarding//LogIn.dart';
+
+import 'package:non_stop/pages/LogIn/LogIn.dart';
 
 class HomePage extends StatefulWidget {
   @override
